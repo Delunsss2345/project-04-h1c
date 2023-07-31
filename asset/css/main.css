@@ -401,3 +401,90 @@ nav ul li:last-of-type > a {
   background-color: #2e80ce;
   border-radius: 30px;
 }
+/* dentist */
+.dentist {
+  margin-top: 291px;
+}
+.title-dentist {
+  color: #10375c;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 38px;
+}
+.action-dentist {
+  display: flex;
+  justify-content: center;
+}
+.action-dentist .btn {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 15px 27px;
+  background: #2e80ce;
+  border-radius: 30px;
+  margin-bottom: 70px;
+}
+.dentist-container .dentist-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 38px;
+}
+.dentist-item .dentist-img {
+  background: #eaf6ff;
+  padding: 28px 4px 0px 4px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+}
+.dentist-item .dentist-img > img {
+  width: 253px;
+  height: 290px;
+  object-fit: cover;
+}
+.dentist-container .dentist-list .dentist-item > h3 {
+  color: #10375c;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.dentist-container .dentist-list .dentist-item > p {
+  color: #575f66;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.btn-dentist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-dentist .btn-1,
+.btn-dentist .btn-2 {
+  cursor: pointer;
+  margin-right: 18px;
+  color: #575f66;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #575f66;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.btn-dentist .btn-1 > svg,
+.btn-dentist .btn-2 > svg {
+  transform: translateY(25%);
+}
+.btn-dentist .btn-hover:hover {
+  border: none;
+  background-color: #2e80ce;
+  color: #ffffff;
+}
