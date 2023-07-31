@@ -3,6 +3,7 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   font-size: 1.6rem;
@@ -13,11 +14,37 @@ body {
   width: 1170px;
   margin: 0 auto;
 }
+.btn-css-hover:hover {
+  opacity: 0.5;
+}
 a {
   text-decoration: none;
 }
-.master {
-  height: 10000px;
+/* commit */
+.btn-local {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-local .btn-1,
+.btn-local .btn-2 {
+  cursor: pointer;
+  margin-right: 18px;
+  color: #575f66;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #575f66;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.btn-local .btn-1 > svg,
+.btn-local .btn-2 > svg {
+  transform: translateY(25%);
+}
+.btn-local .btn-hover:hover {
+  border: none;
+  background-color: #2e80ce;
+  color: #ffffff;
 }
 /* Header */
 .header {
@@ -404,6 +431,7 @@ nav ul li:last-of-type > a {
 /* dentist */
 .dentist {
   margin-top: 291px;
+  margin-bottom: 265px;
 }
 .title-dentist {
   color: #10375c;
@@ -463,28 +491,345 @@ nav ul li:last-of-type > a {
   letter-spacing: 0em;
   text-align: center;
 }
-.btn-dentist {
+/* Media */
+.media {
+  background: #2e80ce;
+  height: 427px;
+}
+.media-container {
+  display: flex;
+}
+
+.media-container .media-img > img {
+  margin-top: -95px;
+}
+.media-container .media-info {
+  margin-top: 76px;
+  margin-left: 160px;
+}
+.media-container .media-info > h2 {
+  color: #ffffff;
+  width: 489px;
+  height: 120px;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-bottom: 18px;
+}
+.media-container .media-info > p {
+  width: 586px;
+  height: 60px;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 38px;
+}
+.media-container .search-app-media {
+  display: flex;
+}
+.search-app-media img:first-of-type {
+  margin-right: 28px;
+}
+/* event */
+.event {
+  margin-top: 170px;
+  margin-bottom: 191px;
+}
+.event .event-container {
+  display: flex;
+  justify-content: space-between;
+}
+.event-info {
+}
+.event-info > h2 {
+  width: 470px;
+  height: 120px;
+  color: #10375c;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-bottom: 28px;
+}
+.event-info > a {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #10375c;
+  text-decoration: underline;
+  margin-bottom: 28px;
+}
+.event .event-container .event-list {
+  display: grid;
+  grid-template-columns: repeat(2, 270px);
+  gap: 30px;
+}
+.event-list .event-item {
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: #f8f8f8;
+  border: 1px solid #e8ebee;
+}
+.event-list .event-item:hover {
+  background: #ffffff;
+  box-shadow: 0px 18px 50px 0px #0000000d;
+}
+.event-list .event-item:hover .event-info-item > a {
+  color: #2e80ce;
+}
+.event-list .event-item .event-img-block > img {
+  width: 270px;
+  height: 172px;
+  border-radius: 12px 12px 0px 0px;
+}
+.event-list .event-item .event-info-item {
+  padding: 21px 22px;
+  margin-top: -4px;
+}
+.event-item .event-info-item > h3 {
+  width: 224px;
+  height: 52px;
+  font-family: Sora;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.event-item .event-info-item > p {
+  width: 226px;
+  height: 72px;
+  color: #575f66;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 12px;
+}
+.event-item .event-info-item > a {
+  color: #10375c;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.btn-local.justify-content-none {
+  display: flex;
+  justify-content: start;
+}
+/* patients */
+.patients {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #f6fbff;
+}
+.patients-container > h2 {
+  position: relative;
+  color: #10375c;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 38px;
+}
+.patients-container > h2::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 136px;
+  height: 2px;
+  background: #2e80ce;
+  bottom: -18px;
+  right: 517px;
+  left: 517px;
+}
+.patients-container > p {
+  width: 617px;
+  height: 56px;
+  color: #575f66;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 38px;
+}
+.action-patients {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-.btn-dentist .btn-1,
-.btn-dentist .btn-2 {
-  cursor: pointer;
-  margin-right: 18px;
-  color: #575f66;
-  width: 36px;
-  height: 36px;
-  border: 1px solid #575f66;
-  border-radius: 50%;
-  background-color: #fff;
+.action-patients > a {
+  padding: 15px 40px;
+  background-color: #2e80ce;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
 }
-.btn-dentist .btn-1 > svg,
-.btn-dentist .btn-2 > svg {
-  transform: translateY(25%);
+.action-patients > a:hover {
+  opacity: 0.6;
 }
-.btn-dentist .btn-hover:hover {
+/* footer */
+.footer {
+  padding-top: 100px;
+  padding-bottom: 42px;
+  background: #10375c;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container .logo-footer-block .logo-footer {
+  margin-bottom: 21px;
+}
+.footer-container .logo-footer-block p {
+  width: 336px;
+  height: 56px;
+  color: #a9b3bb;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.footer-item .item-child {
+  margin-bottom: 18px;
+}
+.footer-item .item-child > span {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.item-child ul li > a {
+  display: inline-block;
+  color: #a9b3bb;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.title-media {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.footer-img-media {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  width: 116px;
+}
+.title-describe {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.footer-media span {
+  display: inline-block;
+  width: 273px;
+  height: 52px;
+  margin-bottom: 10px;
+  color: #a9b3bb;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.footer-media .footer-action input {
+  width: 212px;
+  height: 46px;
+  border-radius: 4px;
+  border: 1px solid #406181;
+  background-color: #10375c;
+  padding: 10px;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  background-color: #10375c;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  opacity: 1; /* Firefox */
+}
+.footer-action > button {
+  padding: 10px 21px;
+  border-radius: 4px;
   border: none;
+  cursor: pointer;
   background-color: #2e80ce;
   color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 12px;
+}
+/* ------------- */
+.footer-container {
+  position: relative;
+}
+.footer-container::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 1170px;
+  height: 1px;
+  background-color: #406181;
+  bottom: 0;
+}
+.copy-right {
+  padding-top: 28px;
+  text-align: center;
+  color: #aab3ba;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
 }
