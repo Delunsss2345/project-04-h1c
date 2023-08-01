@@ -242,6 +242,7 @@ nav ul li:last-of-type > a {
   align-items: center;
   padding: 21px 61px 20px 22px;
   cursor: pointer;
+  animation: 0.4s;
 }
 .service-list .service-item:hover {
   background: #ffffff;
@@ -317,10 +318,10 @@ nav ul li:last-of-type > a {
   background-color: #fff;
   border: #eaf6ff 16px solid;
   cursor: pointer;
+  transition: 0.25s;
 }
 .works-list .works-item:hover {
-  margin-top: -16px;
-  margin-bottom: 32px;
+  transform: translateY(-10%);
   border: #2e80ce 16px solid;
 }
 .works-list .works-item:hover a {
@@ -469,11 +470,16 @@ nav ul li:last-of-type > a {
   padding: 28px 4px 0px 4px;
   margin-bottom: 12px;
   border-radius: 6px;
+ 
+}
+.dentist-item:hover .dentist-img > img {
+  transform: scale(1.1);
 }
 .dentist-item .dentist-img > img {
   width: 253px;
   height: 290px;
   object-fit: cover;
+  transition: 0.25s;
 }
 .dentist-container .dentist-list .dentist-item > h3 {
   color: #10375c;
